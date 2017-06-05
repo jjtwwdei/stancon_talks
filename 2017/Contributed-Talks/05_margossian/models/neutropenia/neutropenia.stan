@@ -46,7 +46,7 @@ functions{
     dxdt[1] = -ka * x[1];
     dxdt[2] = ka * x[1] - (k10 + k12) * x[2] + k21 * x[3];
     dxdt[3] = k12 * x[2] - k21 * x[3];
-    conc = x[1]/V1;
+    conc = x[2]/V1;
     EDrug = alpha * conc;
     // x[4], x[5], x[6], x[7] and x[8] are differences from circ0.
     prol = x[4] + circ0;
